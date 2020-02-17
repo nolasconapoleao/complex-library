@@ -18,3 +18,8 @@ TARGET_SOURCES(
         ${PROJECT_SOURCE_DIR}/src/utils/ComplexCalculator.cpp
         ${PROJECT_SOURCE_DIR}/src/utils/ComplexConverter.cpp
 )
+
+ADD_TEST(
+    ${EXECUTABLE_NAME}
+    ${EXECUTABLE_NAME}
+)

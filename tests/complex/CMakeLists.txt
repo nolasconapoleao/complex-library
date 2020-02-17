@@ -16,3 +16,8 @@ TARGET_SOURCES(
         ${PROJECT_SOURCE_DIR}/src/complex/PolarComplex.cpp
         ${PROJECT_SOURCE_DIR}/src/complex/RectangularComplex.cpp
 )
+
+ADD_TEST(
+        ${EXECUTABLE_NAME}
+        ${EXECUTABLE_NAME}
+)
