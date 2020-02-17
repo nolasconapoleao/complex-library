@@ -4,6 +4,9 @@ PROJECT(complex-library)
 SET(CMAKE_CXX_STANDARD 20)
 SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall")
 
+ADD_SUBDIRECTORY(src)
+ADD_SUBDIRECTORY(tests)
+
 # Application executable
 SET(APPLICATION_NAME Application)
 ADD_EXECUTABLE(
@@ -11,3 +14,7 @@ ADD_EXECUTABLE(
         main.cpp
 )
 
+TARGET_LINK_LIBRARIES(${APPLICATION_NAME}
+    PUBLIC
+        lib-complex
+)
