@@ -33,9 +33,15 @@ ctest
 ### And coding style tests
 
 In order to merge to master the code in the pull request should be formatted using the checks defined in <project>/.clang-format. To run the clang-format use:
-
 ```
 clang-format -i $file
+```
+
+Another way is to use automatic formatting.
+```
+cd <project-path>
+cp tools/pre-commit.sh .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
 ```
 
 ## Contributing
